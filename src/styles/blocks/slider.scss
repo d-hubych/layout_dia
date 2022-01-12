@@ -1,0 +1,61 @@
+.slider {
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  min-height: 390px;
+  border-radius: 30px;
+
+  background-image: url(../images/slider/slide-img-1.jpg);
+  background-size: cover;
+  background-position: center;
+
+  @include display-L {
+    width: 49vw;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  &__content {
+    position: absolute;
+    bottom: 24px;
+
+    @include display-L {
+      display: flex;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+    margin-bottom: 16px;
+    margin-right: 24px;
+  }
+
+  &__title {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    
+    margin-bottom: 8px;
+  }
+  
+  &__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__button {
+    height: 32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: $c-white;
+    border-radius: 50%;
+  }
+}

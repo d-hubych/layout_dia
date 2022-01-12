@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import "./normalize.scss";
+
 @import "utils";
-@import "fonts";
 @import "typography";
 
-body {
-  background: $c-gray;
-}
+@import "./blocks/button.scss";
+@import "./blocks/body.scss";
+@import "./blocks/navigation.scss";
+@import "./blocks/strategic.scss";
+@import "./blocks/slider.scss";

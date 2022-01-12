@@ -1,0 +1,56 @@
+.strategic {
+  color: $c-white;
+  // height: 100vh;
+
+  @include display-L {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__base {
+    padding: 20px;
+  }
+
+  &__title {
+    font-family: Poppins;
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 62px;
+    letter-spacing: -2px;
+    margin-bottom: 32px;
+
+    @include display-M {
+      font-size: 64px;
+      line-height: 68px;
+      margin-bottom: 24px;
+    }
+
+    @include display-L {
+      margin-top: 120px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__subtitle {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 72px;
+
+    @include display-M {
+      margin-bottom: 56px;
+    }
+
+    @include display-L {
+      margin-bottom: 97px;
+    }
+  }
+
+  &__button {
+    margin-bottom: 48px;
+
+    @include display-M {
+      margin-bottom: 147px;
+    }
+  }
+}
